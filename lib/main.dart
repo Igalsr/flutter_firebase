@@ -44,6 +44,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() {
 
+      mFirebaseDatabase.reference().child("Test").once().then((DataSnapshot snapshot){
+
+        if (snapshot != null){
+
+          Map<dynamic, dynamic> list = snapshot.value;
+
+          print ("${list.values}");
+
+        }
+      });
+
       _counter++;
     });
   }
