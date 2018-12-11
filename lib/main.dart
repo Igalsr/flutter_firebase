@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // Write to db on click
     mFirebaseDatabase.reference().child("Test").set({
-      "name":"iOS",
+      "name":"Android is King",
       "mail":"Test",
       "int": 5,
       "bool":true
